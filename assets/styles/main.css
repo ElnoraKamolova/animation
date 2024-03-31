@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    animation-name: boxanimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes boxanimation {
+    from {
+        background: black;
+        transform: translateX(0) translateY(0)
+        rotate(0deg);
+        border-radius: 0;
+    }
+
+    to {
+        background: yellow;
+        transform: translateX(500px) translateY(250px)
+        rotate(360deg);
+        border-radius: 100%;
+        background: url('../images/photo_2024-03-31_18-34-12.jpg');
+        background-size: cover;
+    }
+}
